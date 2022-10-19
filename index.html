@@ -244,6 +244,9 @@ function td(content, className="")
 		if (hour > 12) { 
 			return (hour % 12) + ":" + min + " pm"; 
 		}
+		if (hour == 12) {
+			return 12 + ":" + min + " pm";
+		}
 		if (hour == 0) {
 			return 12 + ":" + min + " am";
 		}
